@@ -6,8 +6,6 @@ import os
 
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image as keras_image
-
-# Optional: Gemini API
 try:
     import google.generativeai as genai
     from dotenv import load_dotenv
@@ -18,8 +16,6 @@ try:
 except Exception as e:
     GEMINI_ENABLED = False
     gemini_model = None
-
-# Load Keras model
 @st.cache_resource
 def load_skin_model():
     return load_model("facial_skin_model.keras")
@@ -27,7 +23,6 @@ def load_skin_model():
 model = load_skin_model()
 class_names = ['Acne', 'Blackheads', 'Clear', 'Dry', 'Oily', 'Scars', 'Spots', 'Whiteheads']
 
-# Get Gemini advice
 def get_advice(condition):
     if not GEMINI_ENABLED:
         return "⚠ Gemini not available or API key not configured."
@@ -55,7 +50,6 @@ You are a medical assistant. Explain the skin condition: "{condition}" in both E
     except Exception as e:
         return f"Gemini error: {e}"
 
-# Streamlit UI
 st.set_page_config(page_title="MediScan AI", layout="centered")
 st.title("🧑‍⚕️ MediScan AI – Skin Analyzer")
 st.write("Upload a facial image to get the skin condition and remedies.")
