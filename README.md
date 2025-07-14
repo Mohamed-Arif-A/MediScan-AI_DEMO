@@ -1,35 +1,29 @@
-# 🧠 MediScan AI – Facial Skin Health Analyzer
+# 🧠 MediScan AI – Facial Skin Health Analyzer (Streamlit Version)
 
-**MediScan AI** is an intelligent skin health analyzer that detects facial skin conditions and provides helpful advice in **English** and **Tamil**. It uses a deep learning model trained on facial skin images to classify conditions such as acne, blackheads, whiteheads, dry skin, oily skin, scars, spots, and more.
-
-The app provides instant predictions along with natural language health explanations, making it user-friendly and informative for a wide audience.
+**MediScan AI** is a smart AI-powered system designed to analyze facial skin conditions and provide health advice in **English** and **Tamil**. Built with a vision to assist users in understanding their skin health instantly, MediScan AI uses deep learning to detect skin issues from facial images and gives multilingual medical insights powered by Google's Gemini AI.
 
 ---
 
 ## 🔍 Features
 
-- 📸 Upload facial skin images for analysis
-- 🧬 Predicts 8 common facial skin conditions
-- 🤖 Google Gemini AI integration for detailed advice
-- 🌐 Multilingual support (English & Tamil)
-- 💡 Real-time image processing and output
+- 📸 Upload a facial image for instant skin analysis
+- 🧬 Predicts 8 skin conditions:
+  - Acne, Blackheads, Whiteheads, Clear, Dry, Oily, Scars, Spots
+- 🌐 Multilingual health advice (English + தமிழ்)
+- 🤖 Powered by **Google Gemini 1.5 Flash** for contextual responses
+- ⚡ Built using **Streamlit** for rapid testing and interface
 
 ---
 
 ## ⚙️ Tech Stack
 
 - **Python 3.10**
-- **TensorFlow / Keras** – MobileNetV2 model
-- **Streamlit** – Temporary frontend for testing/demo
-- **Google Generative AI** – Gemini 1.5 Flash model
-- **.env** for secure API key storage
+- **TensorFlow / Keras** (MobileNetV2 model)
+- **Streamlit** (frontend)
+- **Google Generative AI API (Gemini)**
+- `.env` for API key management
 
 ---
 
-## 📦 Setup Instructions
+## 📁 Project Structure
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/mediscan-ai.git
-cd mediscan-ai
