@@ -27,3 +27,12 @@
 
 ## 📁 Project Structure
 
+MediScan-AI/
+│
+├── facial_skin_model.keras       # Trained deep learning model
+├── streamlit_app.py              # Main Streamlit application file
+├── .env                          # Contains Gemini API key
+├── requirements.txt              # Python dependencies list
+└── README.md                     # Project documentation
+
+
